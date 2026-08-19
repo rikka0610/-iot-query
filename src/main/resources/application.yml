@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/iot_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 你的密码
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+my-iot:
+  platform: njcl # 可选：njcl（南京诚联）、cmcc（中国移动）、ctcc（中国电信）
+  api-id: ${MY_IOT_API_ID:your-default-id}
+  api-secret: ${MY_IOT_API_SECRET:your-default-secret}
+  api-url: ${MY_IOT_API_URL:https://customer.iot-njcl.cn/api/v1/sim_cards/get_sim_card_detail}
+  connect-timeout: ${MY_IOT_CONNECT_TIMEOUT:20000}
+  read-timeout: ${MY_IOT_READ_TIMEOUT:30000}
