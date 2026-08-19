@@ -5,7 +5,7 @@ IoT Query Docker 部署说明
 --------------
 应用通过 my-iot.platform 选择 SDK 适配器：
 
-  njcl  南京诚联（真实 API）
+  njcl  南京诚联
   cmcc  中国移动（当前为模拟数据）
   ctcc  中国电信（当前为模拟数据）
 
